@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+'use strict';
+
+//console.log("Hello World, would you like to play a very spooky game?");
+
+
+var c = require("skilstak-colors");
+
+
+var out = process.stdout;
+
+out.write(c.cl);
+while (true) {
+  out.write(c.rc() + "GOTTA GO FAST" + c.x);
+}
