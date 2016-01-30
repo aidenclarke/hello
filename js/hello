@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var c = require('skilstak-colors');
+
+var name = 'Dog';
+
+
+
+var printMulti = function (message) {
+  console.log(c.multi(message) + c.reset);
+}
+
+var printBlue = function (message) {
+  console.log(c.b + message);
+}
+
+var printName = function (message) {
+  console.log(c.green + name);
+}
+
+
+
+printBlue("Blue");
+
+printName("green is not a very creative color");
+
+
+printMulti("Multi!");
